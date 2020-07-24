@@ -1,0 +1,48 @@
+/*Tombol Chat Whatsapp*/
+.fixed-whatsapp{
+    position:fixed;
+    bottom:0px;
+    right:20px;
+    width:50px;
+    height:50px;
+    z-index:9999
+}
+
+.fixed-whatsapp:before{
+    content:"";
+    background-repeat:no-repeat;
+    background-size:25px 25px;
+    background-position:center center;
+    width:40px;
+    height:40px;
+    background-image:url("data:image/png;base64,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");
+    background-color:green #edfd5c;
+    position:absolute;
+    top:0;
+    border-radius:100%;
+    box-shadow:0 1px 1.5px 0 black(0,0,0,.12),0 1px 1px 0 black (0,0,0,.24)}
+
+    .fixed-whatsapp:after{
+        content:"Kalau ada yang ingin ditanyakan konsultasi disini yaa!";
+        width:250px;
+        padding:10px 10px;
+        position:absolute;
+        bottom:20%;
+        margin-bottom:0px;
+        right: 100px;
+        left: -260px;
+        text-align:right;
+        color: black;
+        border:1px solid white;
+        background:white;
+        border-radius:4px;
+        opacity:0;
+        transition:all .4s ease-in-out;
+        font-size:90%;
+        line-height:1.1;
+    }
+
+    .fixed-whatsapp:hover:after{
+        opacity:1;
+        right:0;
+    }
